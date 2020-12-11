@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>前航 - 前端导航网站</title>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        .img {
+            max-width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 这是导航栏 -->
+    <div class="logoBa">
+        <img class="logoImg" src="/images/Bing.png" alt="">
+    </div>
+    <header class="globalHeader">
+        <form class="searchForm" method="get" action="https://cn.bing.com/search">
+            <!--手机上就不用新开网页了 target = "_blank" -->
+            <input name="" type="text">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+    <!-- 这是logo列表栏 -->
+    <main class="globalMain">
+        <!-- 不确定ul外面是不是要套一个div ,所以先给他一个class -->
+        <ul class="siteList">
+            <!-- 网站1 -->
+
+
+
+            <!-- 新增网站 -->
+            <li class="last">
+                <div class="addButton">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div class="text">新增网站</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- 这是尾部备案栏 -->
+    <footer class="globalFooter"></footer>
+    <!-- b站 -->
+    <!-- <script src="//at.alicdn.com/t/font_2262518_ztdzhoocsu.js"></script> -->
+    <script src="//at.alicdn.com/t/font_2264111_zrkfuww7ilf.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
